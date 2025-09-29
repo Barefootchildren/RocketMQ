@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ecc5a646-31da-4c68-a2e1-22d6bdc19f64" name="更改" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 3
+}]]></component>
+  <component name="ProjectId" id="33M3h9oNF6sstQxIxhrYBss6MA8" />
+  <component name="ProjectViewState">
+    <option name="abbreviatePackageNames" value="true" />
+    <option name="compactDirectories" value="true" />
+    <option name="flattenModules" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showModules" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.OrderlyMessageTest.OrderlyConsumer.executor": "Run",
+    "JUnit.OrderlyMessageTest.OrderlyProducer.executor": "Run",
+    "JUnit.RocketMQDemoTest.oneWaySend.executor": "Run",
+    "JUnit.RocketMQDemoTest.test01.executor": "Run",
+    "JUnit.RocketMQDemoTest.test02.executor": "Run",
+    "JUnit.RocketMQDemoTest.testAsyncConsumer.executor": "Run",
+    "JUnit.RocketMQDemoTest.testBatchConsumer.executor": "Run",
+    "JUnit.RocketMQDemoTest.testBatchSend.executor": "Run",
+    "JUnit.RocketMQDemoTest.testDelayConsumer.executor": "Run",
+    "JUnit.RocketMQDemoTest.testDelaySend.executor": "Run",
+    "JUnit.RocketMQDemoTest.testOneWayConsumer.executor": "Run",
+    "JUnit.RocketMQDemoTest.testSendAsyncMessage.executor": "Run",
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "kotlin-language-version-configured": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "模块",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "Errors",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="JUnit.OrderlyMessageTest.OrderlyProducer">
+    <configuration name="OrderlyMessageTest.OrderlyConsumer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RocketMQ" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderlyMessageTest" />
+      <option name="METHOD_NAME" value="OrderlyConsumer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="OrderlyMessageTest.OrderlyProducer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RocketMQ" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="OrderlyMessageTest" />
+      <option name="METHOD_NAME" value="OrderlyProducer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RocketMQDemoTest.testBatchConsumer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RocketMQ" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RocketMQDemoTest" />
+      <option name="METHOD_NAME" value="testBatchConsumer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RocketMQDemoTest.testBatchSend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RocketMQ" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RocketMQDemoTest" />
+      <option name="METHOD_NAME" value="testBatchSend" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RocketMQDemoTest.testDelaySend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="RocketMQ" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RocketMQDemoTest" />
+      <option name="METHOD_NAME" value="testDelaySend" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.OrderlyMessageTest.OrderlyProducer" />
+        <item itemvalue="JUnit.OrderlyMessageTest.OrderlyConsumer" />
+        <item itemvalue="JUnit.RocketMQDemoTest.testBatchSend" />
+        <item itemvalue="JUnit.RocketMQDemoTest.testDelaySend" />
+        <item itemvalue="JUnit.RocketMQDemoTest.testBatchConsumer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26199.169" />
+        <option value="bundled-js-predefined-d6986cc7102b-9c94529fcfe0-JavaScript-IU-252.26199.169" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="ecc5a646-31da-4c68-a2e1-22d6bdc19f64" name="更改" comment="" />
+      <created>1759113234082</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1759113234082</updated>
+      <workItem from="1759113235424" duration="10720000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

@@ -5,6 +5,11 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/RocketMQSpringBoot/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
+        <option value="$PROJECT_DIR$/seckill/pom.xml" />
+        <option value="$PROJECT_DIR$/seckill/seckill-project-web/pom.xml" />
+        <option value="$PROJECT_DIR$/seckill/seckill-project-service/pom.xml" />
       </list>
     </option>
   </component>

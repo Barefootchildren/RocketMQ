@@ -1,3 +1,4 @@
+import cn.hutool.db.DaoTemplate;
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyStatus;
@@ -11,6 +12,7 @@ import org.junit.Test;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 public class RocketMQDemoTest {
@@ -107,6 +109,37 @@ public class RocketMQDemoTest {
         producer.shutdown();
     }
     @Test
+    public void sendMessageWithTag()throws Exception{
+        DefaultMQProducer producer = new DefaultMQProducer("tag-produce-group");
+        producer.setNamesrvAddr("172.18.23.195:9876");
+        producer.start();
+        Message message = new Message("tagTopic", "tag1", "这是带标签1的消息".getBytes());
+        Message message2 = new Message("tagTopic", "tag2", "这是带标签2的消息".getBytes());
+        System.out.println(producer.send(message));
+        System.out.println(producer.send(message2));
+        producer.shutdown();
+    }
+    @Test
+    public void sendMessageWithKey()throws Exception{
+        DefaultMQProducer producer = new DefaultMQProducer("key-produce-group");
+        producer.setNamesrvAddr("172.18.23.195:9876");
+        producer.start();
+        Message message = new Message("keyTopic", "tag1","key1", "这是带标签1key1的消息".getBytes());
+        System.out.println(producer.send(message));
+        producer.shutdown();
+    }
+    @Test
+    public void retryProducer()throws Exception{
+        DefaultMQProducer producer = new DefaultMQProducer("retry-produce-group");
+        producer.setNamesrvAddr("172.18.23.195:9876");
+        producer.start();
+        producer.setRetryTimesWhenSendAsyncFailed(2);
+        producer.setRetryTimesWhenSendFailed(2);
+        Message message = new Message("retryTopic", "tag1", "这是带标签1的消息".getBytes());
+        System.out.println(producer.send(message));
+        producer.shutdown();
+    }
+    @Test
     public void testAsyncConsumer() throws Exception{
         DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("async-consumer-group");
         consumer.setNamesrvAddr("172.18.23.195:9876");
@@ -162,6 +195,90 @@ public class RocketMQDemoTest {
             @Override
             public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
                 System.out.println(Thread.currentThread().getName()+"批量消费："+new String(list.get(0).getBody()));
+                return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
+            }
+        });
+        consumer.start();
+        System.in.read();
+    }
+    @Test
+    public void testTagConsumer() throws Exception{
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("tag1-consumer-group");
+        consumer.setNamesrvAddr("172.18.23.195:9876");
+        consumer.subscribe("tagTopic", "tag1 || tag2");
+        consumer.registerMessageListener(new MessageListenerConcurrently() {
+            @Override
+            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
+                System.out.println(Thread.currentThread().getName()+"收到标签消息："+new String(list.get(0).getBody()));
+                return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
+
+            }
+        });
+        consumer.start();
+        System.in.read();
+    }
+    @Test
+    public void testTagConsumer2() throws Exception{
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("tag2-consumer-group");
+        consumer.setNamesrvAddr("172.18.23.195:9876");
+        consumer.subscribe("tagTopic", "tag2");
+        consumer.registerMessageListener(new MessageListenerConcurrently() {
+            @Override
+            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
+                System.out.println(Thread.currentThread().getName()+"收到标签消息："+new String(list.get(0).getBody()));
+                return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
+
+            }
+        });
+        consumer.start();
+        System.in.read();
+    }
+    @Test
+    public void testKeyConsumer2() throws Exception{
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("key-consumer-group");
+        consumer.setNamesrvAddr("172.18.23.195:9876");
+        consumer.subscribe("keyTopic", "tag1");
+        consumer.registerMessageListener(new MessageListenerConcurrently() {
+            @Override
+            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
+                System.out.println(Thread.currentThread().getName()+"收到标签消息："+new String(list.get(0).getBody()));
+                return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
+
+            }
+        });
+        consumer.start();
+        System.in.read();
+    }
+    @Test
+    public void retryConsumer()throws Exception{
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("retry-consumer-group");
+        consumer.setNamesrvAddr("172.18.23.195:9876");
+        consumer.subscribe("retryTopic", "*");
+        consumer.setMaxReconsumeTimes(2);
+        consumer.registerMessageListener(new MessageListenerConcurrently() {
+            @Override
+            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
+                MessageExt messageExt = list.get(0);
+                System.out.println(new Date());
+                System.out.println("消息重试次数："+messageExt.getReconsumeTimes());
+                System.out.println(Thread.currentThread().getName()+"收到消息："+new String(messageExt.getBody()));
+                return ConsumeConcurrentlyStatus.RECONSUME_LATER;
+            }
+        });
+        consumer.start();
+        System.in.read();
+    }
+    @Test
+    public void retryDeadConsumer()throws Exception{
+        DefaultMQPushConsumer consumer = new DefaultMQPushConsumer("retry-dead-consumer-group");
+        consumer.setNamesrvAddr("172.18.23.195:9876");
+        consumer.subscribe("%DLQ%retry-consumer-group", "*");
+        consumer.registerMessageListener(new MessageListenerConcurrently() {
+            @Override
+            public ConsumeConcurrentlyStatus consumeMessage(List<MessageExt> list, ConsumeConcurrentlyContext consumeConcurrentlyContext) {
+                MessageExt messageExt = list.get(0);
+                System.out.println(new Date());
+                System.out.println(Thread.currentThread().getName()+"收到消息："+new String(messageExt.getBody()));
                 return ConsumeConcurrentlyStatus.CONSUME_SUCCESS;
             }
         });

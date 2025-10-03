@@ -13,8 +13,10 @@
       <schema-mapping>
         <introspection-scope>
           <node kind="schema">
+            <name qname="bank1" />
             <name qname="@" />
             <name qname="seckill" />
+            <name qname="bank2" />
           </node>
         </introspection-scope>
       </schema-mapping>

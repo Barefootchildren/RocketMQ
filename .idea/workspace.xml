@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecc5a646-31da-4c68-a2e1-22d6bdc19f64" name="更改" comment="">
-      <change afterPath="$PROJECT_DIR$/seckill/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/5e383708-a68e-4896-8550-e0cfa6e63869.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/5e383708-a68e-4896-8550-e0cfa6e63869.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/data_source_mapping.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/data_source_mapping.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/RocketMQDemoTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/RocketMQDemoTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,70 +43,70 @@
     <option name="showLibraryContents" value="true" />
     <option name="showModules" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "JUnit.OrderlyMessageTest.OrderlyConsumer.executor": "Run",
-    "JUnit.OrderlyMessageTest.OrderlyProducer.executor": "Run",
-    "JUnit.RepeatMessageTest.testRepeatMessageConsumer.executor": "Run",
-    "JUnit.RepeatMessageTest.testRepeatMessageProducer.executor": "Run",
-    "JUnit.RocketMQDemoTest.oneWaySend.executor": "Run",
-    "JUnit.RocketMQDemoTest.retryConsumer.executor": "Run",
-    "JUnit.RocketMQDemoTest.retryDeadConsumer.executor": "Run",
-    "JUnit.RocketMQDemoTest.retryProducer.executor": "Run",
-    "JUnit.RocketMQDemoTest.sendMessageWithKey.executor": "Run",
-    "JUnit.RocketMQDemoTest.sendMessageWithTag.executor": "Run",
-    "JUnit.RocketMQDemoTest.test01.executor": "Run",
-    "JUnit.RocketMQDemoTest.test02.executor": "Run",
-    "JUnit.RocketMQDemoTest.testAsyncConsumer.executor": "Run",
-    "JUnit.RocketMQDemoTest.testBatchConsumer.executor": "Run",
-    "JUnit.RocketMQDemoTest.testBatchSend.executor": "Run",
-    "JUnit.RocketMQDemoTest.testDelayConsumer.executor": "Run",
-    "JUnit.RocketMQDemoTest.testDelaySend.executor": "Run",
-    "JUnit.RocketMQDemoTest.testKeyConsumer2.executor": "Run",
-    "JUnit.RocketMQDemoTest.testOneWayConsumer.executor": "Run",
-    "JUnit.RocketMQDemoTest.testSendAsyncMessage.executor": "Run",
-    "JUnit.RocketMQDemoTest.testTagConsumer.executor": "Run",
-    "JUnit.RocketMQDemoTest.testTagConsumer2.executor": "Run",
-    "JUnit.RocketMqSpringBootApplicationTests.sendMessage.executor": "Run",
-    "JUnit.RocketMqSpringBootApplicationTests.sendMessageByTag.executor": "Run",
-    "JUnit.RocketMqSpringBootApplicationTests.sendMessageWithKey.executor": "Run",
-    "JUnit.RocketMqSpringBootApplicationTests.testAsyncMessage.executor": "Run",
-    "JUnit.RocketMqSpringBootApplicationTests.testDelay.executor": "Run",
-    "JUnit.RocketMqSpringBootApplicationTests.testListMessage.executor": "Run",
-    "JUnit.RocketMqSpringBootApplicationTests.testMsgModel.executor": "Run",
-    "JUnit.RocketMqSpringBootApplicationTests.testObjectMsg.executor": "Run",
-    "JUnit.RocketMqSpringBootApplicationTests.testOnWay.executor": "Run",
-    "JUnit.RocketMqSpringBootApplicationTests.testOrderly.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.RocketMqSpringBootApplication.executor": "Run",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Java/RocketMQ/seckill/seckill-project-service/src/main/java/com/coder",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "模块",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "Errors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;JUnit.OrderlyMessageTest.OrderlyConsumer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.OrderlyMessageTest.OrderlyProducer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RepeatMessageTest.testRepeatMessageConsumer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RepeatMessageTest.testRepeatMessageProducer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.oneWaySend.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.retryConsumer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.retryDeadConsumer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.retryProducer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.sendMessageWithKey.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.sendMessageWithTag.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.test01.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.test02.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.testAsyncConsumer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.testBatchConsumer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.testBatchSend.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.testDelayConsumer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.testDelaySend.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.testKeyConsumer2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.testOneWayConsumer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.testSendAsyncMessage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.testTagConsumer.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMQDemoTest.testTagConsumer2.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMqSpringBootApplicationTests.sendMessage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMqSpringBootApplicationTests.sendMessageByTag.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMqSpringBootApplicationTests.sendMessageWithKey.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMqSpringBootApplicationTests.testAsyncMessage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMqSpringBootApplicationTests.testDelay.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMqSpringBootApplicationTests.testListMessage.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMqSpringBootApplicationTests.testMsgModel.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMqSpringBootApplicationTests.testObjectMsg.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMqSpringBootApplicationTests.testOnWay.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.RocketMqSpringBootApplicationTests.testOrderly.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;Spring Boot.RocketMqSpringBootApplication.executor&quot;: &quot;Run&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Java/RocketMQ/seckill/seckill-project-service/src/main/java/com/coder&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;模块&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Java\RocketMQ\seckill\seckill-project-service\src\main\java\com\coder" />
@@ -206,6 +206,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="DtxDemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="dtx-demo" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coder.DtxDemoApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DtxTxmsgDemoBank1Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="dtx-txmsg-demo-bank1" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coder.DtxTxmsgDemoBank1Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DtxTxmsgDemoBank2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="dtx-txmsg-demo-bank2" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.coder.DtxTxmsgDemoBank2Application" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="RocketMqSpringBootApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="RocketMQSpringBoot" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.coder.RocketMqSpringBootApplication" />
@@ -254,7 +275,8 @@
       <workItem from="1759113235424" duration="11089000" />
       <workItem from="1759183515627" duration="7058000" />
       <workItem from="1759209146162" duration="6323000" />
-      <workItem from="1759284991469" duration="13886000" />
+      <workItem from="1759284991469" duration="14165000" />
+      <workItem from="1759386012059" duration="7918000" />
     </task>
     <servers />
   </component>
